@@ -738,7 +738,7 @@ In signal terms: the pdf of a sum is the *convolution* of the individual pdfs (C
 left=-2; right=2; bottom=0; top=1.1
 ---
 y=1|blue|-0.5<x<0.5
-y=1-\left|x\right||red|-1<x<1
+y=1-\operatorname{abs}\left(x\right)|red|-1<x<1
 y=\frac{(x+1.5)^{2}}{2}|green|-1.5<x<-0.5
 y=0.75-x^{2}|green|-0.5<x<0.5
 y=\frac{(1.5-x)^{2}}{2}|green|0.5<x<1.5

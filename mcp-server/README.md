@@ -45,4 +45,4 @@ Also: resource `book://toc` (table of contents) and prompt `explain_topic(topic)
 
 ## How it parses
 
-A chapter is any `part-*/NN-*.md`; an appendix is any `appendix/X-*.md`. The `#` heading is the title. `##` headings split sections, and a leading `14.7` or `D.3` in the heading becomes the section id. Headings inside code fences are ignored. Follow the [authoring guide](../00-front/authoring-guide.md) and new content is picked up without code changes.
+A chapter is any `part-*/NN-*.md` or `tracks/*/NN-*.md`; an appendix is any `appendix/X-*.md`. The `#` heading is the title. `##` headings split sections, and a leading `14.7` or `D.3` in the heading becomes the section id. Headings inside code fences are ignored. Follow the [authoring guide](../00-front/authoring-guide.md) and new content is picked up without code changes.

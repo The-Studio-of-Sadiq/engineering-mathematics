@@ -1544,7 +1544,7 @@ Every entry below is a short integral over one period; amplitude $V_m$ means the
 ```desmos-graph
 left=0; right=12.566; bottom=-0.2; top=1.2
 ---
-y=\left|\sin(x)\right||blue
+y=\operatorname{abs}\left(\sin(x)\right)|blue
 y=\frac{2}{\pi}|red|dashed
 y=0.7071|green|dotted
 ```

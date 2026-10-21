@@ -1250,7 +1250,7 @@ xy=1|blue
 xy=4|blue
 y=x|red
 y=2x|red
-1<xy<4|green
+xy>1|xy<4|green
 ```
 
 *The region of Worked Example 3 is bounded by two hyperbolas (blue) and two lines (red); in the coordinates $u=xy$, $v=y/x$ it becomes the rectangle $[1,4]\times[1,2]$ — only the part between the red lines counts.*

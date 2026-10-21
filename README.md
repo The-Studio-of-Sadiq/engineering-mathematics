@@ -1,52 +1,66 @@
-# Book 1 — Engineering Mathematics Core
+# The Mathematics Universe
 
-> **Objective.** Develop the mathematical foundation needed to understand, model, analyze, and simulate electrical and electronic systems.
+> **Engineering Mathematics Core and Beyond.** A foundation for modelling, analysing and simulating engineered systems, then nine specialization tracks and a research frontier for whoever wants to keep going.
 
-**Boundary.** This book teaches *mathematical methods*. Applications such as Fourier-based filtering, circuit simulation, and motor modeling are treated in their relevant core books or in *Applications & Integrations*. Engineering examples appear here only to motivate and illustrate a method.
+![The Mathematics Universe](images/universe-map.svg)
+
+**[Download the PDF](The-Mathematics-Universe.pdf)** · [Table of Contents](00-front/table-of-contents.md) · [Learning Paths](00-front/learning-paths.md) · [Notation](00-front/notation-and-conventions.md)
 
 ---
 
-## How to read this repo
+## Three levels
 
-- Every chapter is a single Markdown file with LaTeX math (`$…$` inline, `$$…$$` display). It renders in **Obsidian**, **GitHub**, **VS Code** (Markdown preview), and any KaTeX/MathJax renderer.
-- Graphs are written as `desmos-graph` code blocks — plain text equations, no image files to maintain. See [Graphs](#graphs) below.
-- Start with [Notation & Conventions](00-front/notation-and-conventions.md), then follow the [Table of Contents](00-front/table-of-contents.md).
-- Contributors: read the [Authoring Guide](00-front/authoring-guide.md) before adding content.
-
-## Graphs
-
-Graphs use the [Obsidian Desmos plugin](https://github.com/Nigecat/obsidian-desmos), which renders the Desmos graphing calculator from a fenced block:
-
-````markdown
-```desmos-graph
-left=-7; right=7; top=2; bottom=-2
----
-y=\sin(x)|blue
-y=\cos(x)|red|dashed
-```
-````
-
-**Setup (Obsidian):** Settings → Community plugins → Browse → search **"Desmos"** → Install → Enable.
-
-Outside Obsidian (e.g. GitHub), the block shows as readable source — the equations themselves — which you can paste into [desmos.com/calculator](https://www.desmos.com/calculator) line by line.
-
-## Structure
-
-| Part | Folder | Chapters |
+| Level | What it is | Where |
 |---|---|---|
-| I — Mathematical Foundations | [part-1-foundations](part-1-foundations/) | 1–3 |
-| II — Calculus | [part-2-calculus](part-2-calculus/) | 4–7 |
-| III — Linear Algebra | [part-3-linear-algebra](part-3-linear-algebra/) | 8–10 |
-| IV — Differential Equations | [part-4-differential-equations](part-4-differential-equations/) | 11–13 |
-| V — Transforms and Mathematical Analysis | [part-5-transforms](part-5-transforms/) | 14–18 |
-| VI — Probability, Statistics, and Stochastic Mathematics | [part-6-probability-statistics](part-6-probability-statistics/) | 19–21 |
-| VII — Numerical and Computational Mathematics | [part-7-numerical-computational](part-7-numerical-computational/) | 22–25 |
-| Appendix — Derivations and Proofs | [appendix](appendix/) | A–E |
+| **1 — Core** | 25 chapters of engineering mathematics: calculus, linear algebra, differential equations, transforms, probability and statistics, numerical methods, optimization, modelling. Deep and thorough. | `part-1-…` to `part-7-…` |
+| **2 — Specializations** | Nine tracks (A–I), about 70 chapters. Each is shorter and more provocative than the core: a hook, the big idea, the mathematics, an algorithm, an experiment to run, a challenge, and *loose threads*, the questions deliberately left open. | [`tracks/`](tracks/) |
+| **3 — Research Frontier** | Track J: weak solutions, spectral theory, inverse problems, mathematical physics, tensors, algebraic geometry, representation theory, mathematical economics, measure theory, and how research gets done. | [`tracks/j-frontier`](tracks/j-frontier/README.md) |
+| **Appendix** | Complete proofs of the core's central results (61 theorems). | [`appendix/`](appendix/) |
 
-Full chapter list: [Table of Contents](00-front/table-of-contents.md).
+You don't need to read it front to back. Do the core chapters a track lists as prerequisites, then follow the track, or a [learning path](00-front/learning-paths.md) such as *game development* (G → A → I) or *strategic systems* (C → B → D).
 
-The chapters state key results with short justifications. The appendix gives complete proofs, with precise hypotheses and counterexamples, and links back to where each result is used.
+## The tracks
 
-## MCP server
+| Track | Title | Chapters |
+|---|---|---|
+| [A](tracks/a-algorithms/README.md) | The Mathematics Behind Algorithms | 26–30 |
+| [B](tracks/b-probability-information/README.md) | Probability, Uncertainty, and Information | 31–38 |
+| [C](tracks/c-game-theory/README.md) | Game Theory and Strategic Intelligence | 39–46 |
+| [D](tracks/d-optimization/README.md) | Optimization and Operations Research | 47–55 |
+| [E](tracks/e-abstract-math/README.md) | The Abstract Mathematics Behind Everything | 56–62, 99 |
+| [F](tracks/f-logic-foundations/README.md) | Logic, Proofs, and the Foundations of Truth | 63–68 |
+| [G](tracks/g-graphics-simulation/README.md) | Mathematics for Computer Graphics, Games, and Simulation | 69–76 |
+| [H](tracks/h-cryptography-coding/README.md) | Cryptography, Coding, and Digital Security | 77–82 |
+| [I](tracks/i-dynamical-systems/README.md) | Dynamical Systems, Chaos, and Complexity | 83–88 |
+| [J](tracks/j-frontier/README.md) | Mathematics at the Frontier | 89–98 |
 
-[`mcp-server/`](mcp-server/) lets Claude and other MCP clients read the book: list chapters, fetch exact sections, search the text, and pull formula summaries and graphs. Claude Code picks it up from [`.mcp.json`](.mcp.json). For setup and the tool list, see the [server README](mcp-server/README.md).
+Track chapters plant **missing clues**: `[!mystery]` callouts that raise a question and point to the chapter, or the open problem, where the answer lives. The challenges have no answer key on purpose.
+
+## Reading it
+
+- **Obsidian (recommended).** Open this folder as a vault and enable the **Desmos** community plugin (Settings → Community plugins → Browse → "Desmos"). Every `desmos-graph` block becomes a live graph.
+- **GitHub / VS Code.** Math renders; Desmos blocks show as their equations, which you can paste into [desmos.com/calculator](https://www.desmos.com/calculator).
+- **PDF.** [`The-Mathematics-Universe.pdf`](The-Mathematics-Universe.pdf) holds the whole book with bookmarks, clickable cross-references, KaTeX math, and every Desmos graph rendered by Desmos itself.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `part-*/`, `tracks/*/`, `appendix/` | the chapters (Markdown + LaTeX) |
+| `00-front/` | table of contents, notation, syllabi, learning paths, [authoring guide](00-front/authoring-guide.md) |
+| `images/` | every crafted figure (SVG) |
+| `figures/` | the Matplotlib scripts that draw them: `python figures/build_all.py` regenerates all |
+| `tools/book.json` | the single source of truth for tracks, chapters and paths; `python tools/gen_nav.py` regenerates the table of contents and track pages |
+| `tools/fix_desmos.py` | finds and fixes Desmos syntax the Obsidian plugin can't parse |
+| `pdf/` | the PDF build (Node + headless Chrome) |
+| `mcp-server/` | an MCP server so Claude and other clients can search and read the book ([README](mcp-server/README.md)); Claude Code picks it up from [`.mcp.json`](.mcp.json) |
+
+## Rebuilding the PDF
+
+Needs Node 18+ and Google Chrome or Microsoft Edge; Desmos graphs need network access.
+
+```bash
+cd pdf && npm install && node build.mjs
+```
+
+The build renders each Desmos block once (cached in `pdf/cache/`), prints the book with Chrome, and writes `The-Mathematics-Universe.pdf` at the repository root. It reports any math or Desmos errors in `pdf/cache/`. Set `DESMOS_API_KEY` to use your own key; otherwise it uses the public demo key from the Desmos API documentation. `node build.mjs --only core` (or `tracks`, `appendix`) builds a partial PDF for quick checks.

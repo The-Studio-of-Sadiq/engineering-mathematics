@@ -1462,11 +1462,11 @@ y=0.5\frac{\sin(\pi(x+1))}{\pi(x+1)}+\frac{\sin(\pi x)}{\pi x}+0.8\frac{\sin(\pi
 ```desmos-graph
 left=-7; right=7; bottom=-0.3; top=1.3
 ---
-y=\max(0,1-\left|x\right|)|blue
-y=\max(0,1-\left|x-3\right|)|blue|dashed
-y=\max(0,1-\left|x+3\right|)|blue|dashed
-y=\max(0,1-\left|x-6\right|)|blue|dashed
-y=\max(0,1-\left|x+6\right|)|blue|dashed
+y=\max(0,1-\operatorname{abs}\left(x\right))|blue
+y=\max(0,1-\operatorname{abs}\left(x-3\right))|blue|dashed
+y=\max(0,1-\operatorname{abs}\left(x+3\right))|blue|dashed
+y=\max(0,1-\operatorname{abs}\left(x-6\right))|blue|dashed
+y=\max(0,1-\operatorname{abs}\left(x+6\right))|blue|dashed
 x=1.5|red|dotted
 x=-1.5|red|dotted
 ```
@@ -1543,8 +1543,8 @@ y=\cos(0.6\pi x)|red|dashed
 ```desmos-graph
 left=-4; right=4; bottom=-0.3; top=1.6
 ---
-y=\max(0,1-\left|x\right|)+\max(0,1-\left|x-1.5\right|)+\max(0,1-\left|x+1.5\right|)+\max(0,1-\left|x-3\right|)+\max(0,1-\left|x+3\right|)|blue
-y=\max(0,1-\left|x\right|)|red|dashed
+y=\max(0,1-\operatorname{abs}\left(x\right))+\max(0,1-\operatorname{abs}\left(x-1.5\right))+\max(0,1-\operatorname{abs}\left(x+1.5\right))+\max(0,1-\operatorname{abs}\left(x-3\right))+\max(0,1-\operatorname{abs}\left(x+3\right))|blue
+y=\max(0,1-\operatorname{abs}\left(x\right))|red|dashed
 x=0.75|grey|dotted
 x=-0.75|grey|dotted
 ```

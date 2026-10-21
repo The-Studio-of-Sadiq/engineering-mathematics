@@ -1319,7 +1319,7 @@ This is exactly the rectangular-to-polar conversion of complex numbers in [Ch. 2
 left=-2.5; right=2.5; bottom=-2; top=2
 ---
 r=1+\cos(\theta)|blue
-r=\left|\cos(\theta)\right||red|dashed
+r=\operatorname{abs}\left(\cos(\theta)\right)|red|dashed
 r=1|grey|dotted
 ```
 *Polar patterns: the cardioid $r=1+\cos\theta$ (blue) has a single null at $\theta=\pi$; the figure-eight $r=\lvert\cos\theta\rvert$ (red) of a dipole-like element has nulls at $\pm\pi/2$; the grey circle is an omnidirectional pattern.*

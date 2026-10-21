@@ -1,4 +1,4 @@
-"""MCP server exposing the Engineering Mathematics Core book.
+"""MCP server exposing The Mathematics Universe book (core, tracks and appendix).
 
 Read-only tools for listing chapters, reading sections, searching the text,
 and pulling formula summaries, notation and Desmos graphs. Chapters are
@@ -79,6 +79,11 @@ def _load() -> dict[str, Unit]:
         if m:
             key = str(int(m.group(1)))
             units[key] = _parse(Unit(key, "chapter", "", path.parent.name, path))
+    for path in sorted(BOOK_ROOT.glob("tracks/*/*.md")):
+        m = re.match(r"(\d+)-", path.name)
+        if m:
+            key = str(int(m.group(1)))
+            units[key] = _parse(Unit(key, "track chapter", "", path.parent.name, path))
     for path in sorted((BOOK_ROOT / "appendix").glob("*.md")):
         m = re.match(r"([A-Z])-", path.name)
         if m:
@@ -115,8 +120,10 @@ mcp = MCPServer(
     name="engineering-math-book",
     title="Engineering Mathematics Core",
     instructions=(
-        "Reference textbook of engineering mathematics for electrical/electronic engineers: "
-        "25 chapters (keys '1'..'25') and appendices of proofs (keys 'A'..'E'). "
+        "The Mathematics Universe: a 25-chapter engineering-mathematics core (keys '1'..'25'), "
+        "specialization and frontier track chapters (keys '26'..'99': algorithms, probability and "
+        "information, game theory, optimization, abstract math, logic, graphics, cryptography, "
+        "dynamical systems, frontier topics) and appendices of proofs (keys 'A'..'E'). "
         "Use list_chapters or search first, then get_section to read exact text. "
         "Math is LaTeX ($...$, $$...$$); imaginary unit is j."
     ),

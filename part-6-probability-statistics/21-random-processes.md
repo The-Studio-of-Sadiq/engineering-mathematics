@@ -300,8 +300,8 @@ The procedure is always the same: compute $\mu_X(t)$ and $R_{XX}(t+\tau,t)$ and 
 ```desmos-graph
 left=-2.5; right=2.5; bottom=-0.2; top=1.3
 ---
-y=\max(1-\left|x\right|,0)|blue
-y=e^{-\left|x\right|}|red|dashed
+y=\max(1-\operatorname{abs}\left(x\right),0)|blue
+y=e^{-\operatorname{abs}\left(x\right)}|red|dashed
 ```
 
 *Triangular autocorrelation of the random NRZ waveform ($A=1$, $T=1$, blue) and the exponential autocorrelation $e^{-2\lambda\lvert\tau\rvert}$ of a random telegraph signal with the same average switching rate $\lambda=1/(2T)$ (red, dashed). The NRZ signal is completely decorrelated after one bit; the telegraph signal, whose switching instants are not tied to a clock, decorrelates only gradually.*
@@ -421,7 +421,7 @@ For $\rho=e^{-\alpha\lvert\tau\rvert}$ both give $1/\alpha$. Samples spaced much
 ```desmos-graph
 left=-4; right=4; bottom=-1.2; top=1.3
 ---
-y=e^{-\left|x\right|}|blue
+y=e^{-\operatorname{abs}\left(x\right)}|blue
 y=\cos(2x)|red|dashed
 y=\frac{\sin(\pi x)}{\pi x}|green
 y=e^{-x^2}|purple|dotted
@@ -527,8 +527,8 @@ Property 4 is the reason noise powers, not noise voltages, are added when indepe
 ```desmos-graph
 left=-1; right=6; bottom=-0.1; top=0.6
 ---
-y=0.5e^{-\left|x-2\right|}|blue
-y=0.5e^{-\left|x-2\right|}+0.04\sin(23x)e^{-0.1x}|grey|dotted
+y=0.5e^{-\operatorname{abs}\left(x-2\right)}|blue
+y=0.5e^{-\operatorname{abs}\left(x-2\right)}+0.04\sin(23x)e^{-0.1x}|grey|dotted
 x=2|red|dashed
 ```
 

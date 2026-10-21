@@ -1,0 +1,252 @@
+{
+  "title": "The Mathematics Universe",
+  "subtitle": "Engineering Mathematics Core and Beyond",
+  "levels": [
+    {"level": 1, "name": "Core", "blurb": "The original 25 chapters: the engineering-mathematics foundation every track builds on."},
+    {"level": 2, "name": "Specializations", "blurb": "Tracks A–I. Each track has its own prerequisite graph; read the ones you need, in any order."},
+    {"level": 3, "name": "Research Frontier", "blurb": "Track J. Deeper territories to explore as your interests develop."}
+  ],
+  "tracks": [
+    {
+      "id": "A", "level": 2, "dir": "tracks/a-algorithms",
+      "title": "The Mathematics Behind Algorithms",
+      "blurb": "How to make programs faster, prove they work, and understand the limits of computation.",
+      "core": [1, 8, 19, 22, 24],
+      "chapters": [
+        {"n": 26, "slug": "the-mathematics-of-algorithms", "title": "The Mathematics of Algorithms",
+         "explores": "Asymptotic analysis, Big-O/Theta/Omega, recurrences, amortized analysis, algorithmic lower bounds, and complexity trade-offs.",
+         "challenge": "Why can an algorithm that is faster on small inputs become terrible on large ones?"},
+        {"n": 27, "slug": "graph-theory", "title": "Graph Theory: The Mathematics of Connections",
+         "explores": "Paths, trees, flows, matchings, connectivity, graph coloring, planar graphs, network centrality, spectral graph theory.",
+         "challenge": "How would you find the best route, match thousands of people, or detect hidden communities?"},
+        {"n": 28, "slug": "combinatorics", "title": "Combinatorics: Counting the Impossible",
+         "explores": "Permutations, combinations, inclusion–exclusion, recurrence relations, generating functions, pigeonhole principle, Ramsey theory, extremal combinatorics.",
+         "challenge": "How can a problem have more possible configurations than atoms in the observable universe?"},
+        {"n": 29, "slug": "discrete-mathematics-and-logic", "title": "Discrete Mathematics and Computational Logic",
+         "explores": "Propositional and predicate logic, induction, relations, sets, discrete structures, Boolean algebra, invariants, proof techniques.",
+         "challenge": "How do you prove that a program must work for every valid input?"},
+        {"n": 30, "slug": "limits-of-computation", "title": "The Limits of Computation",
+         "explores": "Automata, formal languages, Turing machines, decidability, computability, reductions, P versus NP, and undecidable problems.",
+         "challenge": "Are there problems that no computer program can ever solve?"}
+      ]
+    },
+    {
+      "id": "B", "level": 2, "dir": "tracks/b-probability-information",
+      "title": "Probability, Uncertainty, and Information",
+      "blurb": "The mathematics of randomness, prediction, communication, and decision-making under uncertainty.",
+      "core": [19, 20, 21, 24],
+      "chapters": [
+        {"n": 31, "slug": "probability-science-of-uncertainty", "title": "Probability: The Science of Uncertainty",
+         "explores": "Conditional probability, Bayes' theorem, independence, inequalities, limit theorems."},
+        {"n": 32, "slug": "counting-random-worlds", "title": "The Art of Counting Random Worlds",
+         "explores": "Advanced combinatorics, random variables, distributions, tail bounds."},
+        {"n": 33, "slug": "information-theory", "title": "Information Theory: Measuring the Unknown",
+         "explores": "Entropy, mutual information, KL divergence, coding, compression."},
+        {"n": 34, "slug": "random-walks-and-markov-chains", "title": "Random Walks and Markov Worlds",
+         "explores": "Markov chains, stationary distributions, mixing times, hitting times."},
+        {"n": 35, "slug": "bayesian-inference", "title": "Bayesian Thinking and Statistical Inference",
+         "explores": "Bayesian inference, likelihood, estimators, hypothesis testing, model selection."},
+        {"n": 36, "slug": "stochastic-processes", "title": "Stochastic Processes: When Randomness Evolves",
+         "explores": "Poisson processes, Brownian motion, martingales, stochastic calculus."},
+        {"n": 37, "slug": "causal-inference", "title": "Causal Inference: Correlation Is Not Destiny",
+         "explores": "Causal graphs, interventions, counterfactuals, confounding, experimental design."},
+        {"n": 38, "slug": "monte-carlo", "title": "Monte Carlo: Computing with Randomness",
+         "explores": "Sampling, simulation, variance reduction, Markov chain Monte Carlo."}
+      ]
+    },
+    {
+      "id": "C", "level": 2, "dir": "tracks/c-game-theory",
+      "title": "Game Theory and Strategic Intelligence",
+      "blurb": "What happens when the thing you are optimizing against can think back.",
+      "core": [8, 19, 23],
+      "chapters": [
+        {"n": 39, "slug": "game-theory-basics", "title": "Game Theory: When Rational People Clash",
+         "explores": "Normal-form games, dominant strategies, Nash equilibrium."},
+        {"n": 40, "slug": "prisoners-dilemma", "title": "The Prisoner's Dilemma and Other Traps",
+         "explores": "Cooperation, repeated games, social dilemmas, evolutionary stability."},
+        {"n": 41, "slug": "incomplete-information-games", "title": "Games with Incomplete Information",
+         "explores": "Bayesian games, beliefs, signaling, screening."},
+        {"n": 42, "slug": "mechanism-design", "title": "Mechanism Design: Engineering Incentives",
+         "explores": "Social choice, incentive compatibility, truthful mechanisms."},
+        {"n": 43, "slug": "auctions-and-markets", "title": "Auctions, Markets, and Strategic Bidding",
+         "explores": "Auction formats, revenue, allocation, market design."},
+        {"n": 44, "slug": "coalitions-and-voting", "title": "Coalitions, Voting, and Collective Decisions",
+         "explores": "Cooperative games, Shapley value, voting systems, bargaining."},
+        {"n": 45, "slug": "evolutionary-games", "title": "Evolutionary Games and the Mathematics of Survival",
+         "explores": "Replicator dynamics, evolutionary stable strategies, population games."},
+        {"n": 46, "slug": "adversarial-decision-making", "title": "Adversarial Decision-Making",
+         "explores": "Minimax, zero-sum games, regret, robust strategies."}
+      ]
+    },
+    {
+      "id": "D", "level": 2, "dir": "tracks/d-optimization",
+      "title": "Optimization and Operations Research",
+      "blurb": "From introductory engineering tools to the advanced frameworks that schedule, route and control the world.",
+      "core": [6, 10, 22, 23, 24],
+      "chapters": [
+        {"n": 47, "slug": "convexity", "title": "Convexity: The Geometry of the Best Answer",
+         "explores": "Convex sets/functions, separation theorems, convex optimization."},
+        {"n": 48, "slug": "duality", "title": "Duality: Solving Problems from the Other Side",
+         "explores": "Lagrangian duality, KKT conditions, sensitivity analysis."},
+        {"n": 49, "slug": "integer-programming", "title": "Integer Programming and Combinatorial Optimization",
+         "explores": "Integer models, branch-and-bound, cutting planes, relaxations."},
+        {"n": 50, "slug": "operations-research", "title": "Operations Research: Mathematics That Runs the World",
+         "explores": "Scheduling, inventory, logistics, resource allocation."},
+        {"n": 51, "slug": "optimal-control", "title": "Optimal Control: Choosing the Best Future",
+         "explores": "Dynamic optimization, Pontryagin's principle, control constraints."},
+        {"n": 52, "slug": "dynamic-programming", "title": "Dynamic Programming and Bellman's Principle",
+         "explores": "Bellman equations, optimal policies, state-space methods."},
+        {"n": 53, "slug": "reinforcement-learning", "title": "Reinforcement Learning Through Mathematics",
+         "explores": "Markov decision processes, value functions, policy optimization."},
+        {"n": 54, "slug": "robust-stochastic-optimization", "title": "Robust and Stochastic Optimization",
+         "explores": "Uncertain parameters, chance constraints, worst-case optimization."},
+        {"n": 55, "slug": "optimal-transport", "title": "Optimal Transport and Wasserstein Geometry",
+         "explores": "Transport plans, Wasserstein distances, distribution matching."}
+      ]
+    },
+    {
+      "id": "E", "level": 2, "dir": "tracks/e-abstract-math",
+      "title": "The Abstract Mathematics Behind Everything",
+      "blurb": "The common structures hiding beneath seemingly unrelated problems.",
+      "core": [1, 2, 4, 8, 9, 10],
+      "chapters": [
+        {"n": 56, "slug": "abstract-algebra", "title": "Abstract Algebra: Symmetry as a Language",
+         "explores": "Groups, rings, fields, homomorphisms, quotient structures, group actions, and symmetry. Applications: cryptography, coding theory, geometry, physics."},
+        {"n": 57, "slug": "number-theory", "title": "Number Theory: The Hidden Arithmetic of the Digital World",
+         "explores": "Primes, modular arithmetic, congruences, Diophantine equations, finite fields, elliptic curves, computational number theory. Applications: cryptography, pseudorandom generators, error-correcting codes."},
+        {"n": 58, "slug": "topology", "title": "Topology: What Survives When Shapes Bend?",
+         "explores": "Continuity, compactness, connectedness, homeomorphisms, fundamental groups, homology, topological data analysis. Applications: geometry, robotics, data analysis, dynamical systems."},
+        {"n": 59, "slug": "differential-geometry", "title": "Differential Geometry: Mathematics on Curved Worlds",
+         "explores": "Manifolds, tangent spaces, differential forms, curvature, geodesics, tensors, Riemannian geometry. Applications: robotics, computer graphics, mechanics, relativity."},
+        {"n": 60, "slug": "real-analysis", "title": "Real Analysis: Making Calculus Rigorous",
+         "explores": "Limits, continuity, sequences, series, metric spaces, completeness, measure, integration, convergence theorems. Applications: probability theory, optimization, mathematical proof."},
+        {"n": 61, "slug": "functional-analysis", "title": "Functional Analysis: Infinite-Dimensional Thinking",
+         "explores": "Normed and Banach spaces, Hilbert spaces, operators, dual spaces, spectral theory, weak convergence. Applications: quantum mechanics, PDEs, signal processing, inverse problems."},
+        {"n": 62, "slug": "category-theory", "title": "Category Theory: Mathematics About Mathematics",
+         "explores": "Categories, functors, natural transformations, universal properties, limits, adjunctions. Applications: type theory, programming language design, abstract algebra, compositional systems."},
+        {"n": 99, "slug": "abstract-linear-algebra", "title": "Abstract Linear Algebra: Vectors Without Coordinates",
+         "explores": "Vector spaces over arbitrary fields, linear maps as the primary objects, dual spaces, quotients, direct sums, invariant subspaces, Jordan and rational canonical forms, multilinear forms. An independent advanced module bridging the core linear algebra chapters to functional analysis, representation theory and tensors."}
+      ]
+    },
+    {
+      "id": "F", "level": 2, "dir": "tracks/f-logic-foundations",
+      "title": "Logic, Proofs, and the Foundations of Truth",
+      "blurb": "For writing reliable algorithms, designing programming languages, and understanding why some truths cannot be proved.",
+      "core": [1],
+      "chapters": [
+        {"n": 63, "slug": "think-like-a-mathematician", "title": "How to Think Like a Mathematician",
+         "explores": "Direct proof, contradiction, induction, construction, counterexamples."},
+        {"n": 64, "slug": "set-theory-and-infinity", "title": "Set Theory and the Infinite",
+         "explores": "Cardinality, ordinals, countability, uncountability, axioms."},
+        {"n": 65, "slug": "mathematical-logic", "title": "Mathematical Logic and Formal Systems",
+         "explores": "Predicate logic, completeness, soundness, compactness, incompleteness."},
+        {"n": 66, "slug": "type-theory-curry-howard", "title": "Type Theory and the Curry–Howard Connection",
+         "explores": "Types as propositions, proofs as programs, dependent types."},
+        {"n": 67, "slug": "formal-verification", "title": "Formal Verification: Proving Programs Correct",
+         "explores": "Hoare logic, invariants, model checking, theorem provers."},
+        {"n": 68, "slug": "paradoxes-and-limits", "title": "Paradoxes, Independence, and Mathematical Limits",
+         "explores": "Russell's paradox, Gödel's incompleteness theorems, independence results."}
+      ]
+    },
+    {
+      "id": "G", "level": 2, "dir": "tracks/g-graphics-simulation",
+      "title": "Mathematics for Computer Graphics, Games, and Simulation",
+      "blurb": "The geometry, algebra and numerics that turn equations into worlds on a screen.",
+      "core": [2, 3, 7, 8, 10, 16, 22],
+      "chapters": [
+        {"n": 69, "slug": "mathematics-of-3d-worlds", "title": "The Mathematics of 3D Worlds",
+         "explores": "Coordinate systems, affine transformations, homogeneous coordinates, projections."},
+        {"n": 70, "slug": "quaternions", "title": "Quaternions and the Geometry of Rotation",
+         "explores": "Rotation groups, quaternion algebra, interpolation, rigid-body transforms."},
+        {"n": 71, "slug": "ray-tracing", "title": "Ray Tracing: The Geometry of Light",
+         "explores": "Rays, intersections, reflection, refraction, sampling, rendering equations."},
+        {"n": 72, "slug": "physics-engines", "title": "Numerical Simulation and Physics Engines",
+         "explores": "Numerical integration, collision detection, constraints, stability, error."},
+        {"n": 73, "slug": "fractals", "title": "Fractals: Infinite Complexity from Simple Rules",
+         "explores": "Iterated functions, self-similarity, fractal dimensions, chaotic sets."},
+        {"n": 74, "slug": "procedural-generation", "title": "Procedural Generation: Creating Worlds with Rules",
+         "explores": "Noise functions, random fields, cellular automata, grammars, spatial structures."},
+        {"n": 75, "slug": "computational-geometry", "title": "Computational Geometry: Algorithms for Shapes",
+         "explores": "Convex hulls, triangulation, Voronoi diagrams, spatial indexing."},
+        {"n": 76, "slug": "signal-processing-audio-visual", "title": "Signal Processing for Audio and Visual Computing",
+         "explores": "Sampling, filtering, convolution, transforms, spectral analysis."}
+      ]
+    },
+    {
+      "id": "H", "level": 2, "dir": "tracks/h-cryptography-coding",
+      "title": "Cryptography, Coding, and Digital Security",
+      "blurb": "Mathematics against adversaries and noise. Correct mathematics alone does not guarantee a secure implementation.",
+      "core": [8, 19, 21],
+      "chapters": [
+        {"n": 77, "slug": "cryptography", "title": "Cryptography: Mathematics Against Adversaries",
+         "explores": "Security definitions, symmetric encryption, public-key cryptography."},
+        {"n": 78, "slug": "elliptic-curves", "title": "Elliptic Curves and Modern Cryptographic Mathematics",
+         "explores": "Finite fields, elliptic-curve groups, discrete logarithms."},
+        {"n": 79, "slug": "error-correcting-codes", "title": "Error-Correcting Codes: Recovering the Lost",
+         "explores": "Hamming distance, linear codes, cyclic codes, Reed–Solomon codes."},
+        {"n": 80, "slug": "coding-meets-information-theory", "title": "Coding Theory Meets Information Theory",
+         "explores": "Channel capacity, entropy, coding bounds, compression."},
+        {"n": 81, "slug": "pseudorandomness", "title": "Pseudorandomness and Computational Indistinguishability",
+         "explores": "Randomness tests, pseudorandom generators, computational security."},
+        {"n": 82, "slug": "zero-knowledge-proofs", "title": "Zero-Knowledge Proofs and the Mathematics of Trust",
+         "explores": "Interactive proofs, commitment schemes, proof systems."}
+      ]
+    },
+    {
+      "id": "I", "level": 2, "dir": "tracks/i-dynamical-systems",
+      "title": "Dynamical Systems, Chaos, and Complexity",
+      "blurb": "Tools for epidemics, ecosystems, power grids, neural networks, traffic, and emergent behavior in games.",
+      "core": [10, 11, 12, 22],
+      "chapters": [
+        {"n": 83, "slug": "dynamical-systems", "title": "Dynamical Systems: Rules That Create Motion",
+         "explores": "State spaces, fixed points, stability, phase portraits."},
+        {"n": 84, "slug": "chaos-theory", "title": "Chaos Theory: When Tiny Changes Become Huge",
+         "explores": "Sensitivity, Lyapunov exponents, strange attractors."},
+        {"n": 85, "slug": "bifurcations", "title": "Bifurcations: When Systems Change Their Nature",
+         "explores": "Stability transitions, bifurcation diagrams, nonlinear behavior."},
+        {"n": 86, "slug": "cellular-automata", "title": "Cellular Automata and Emergent Worlds",
+         "explores": "Local rules, global patterns, computational universality."},
+        {"n": 87, "slug": "network-science", "title": "Network Science: The Shape of Complex Systems",
+         "explores": "Random networks, scale-free networks, contagion, synchronization."},
+        {"n": 88, "slug": "complexity-science", "title": "Complexity Science: When the Whole Exceeds the Parts",
+         "explores": "Emergence, self-organization, feedback, adaptive systems."}
+      ]
+    },
+    {
+      "id": "J", "level": 3, "dir": "tracks/j-frontier",
+      "title": "Mathematics at the Frontier",
+      "blurb": "Not prerequisites for every programmer: the deeper territories to explore as your interests develop. The frontier is open-ended.",
+      "core": [9, 10, 13, 18, 19],
+      "chapters": [
+        {"n": 89, "slug": "pde-beyond-the-basics", "title": "Partial Differential Equations Beyond the Basics",
+         "explores": "Weak solutions, boundary-value problems, regularity."},
+        {"n": 90, "slug": "spectral-theory", "title": "Spectral Theory: Understanding Operators Through Their Modes",
+         "explores": "Eigenfunction expansions, operator spectra, applications to PDEs."},
+        {"n": 91, "slug": "inverse-problems", "title": "Inverse Problems: Reconstructing the Invisible",
+         "explores": "Parameter estimation, regularization, ill-posed problems."},
+        {"n": 92, "slug": "mathematical-physics", "title": "Mathematical Physics: The Structure Behind Nature",
+         "explores": "Variational principles, symmetries, Hamiltonian mechanics."},
+        {"n": 93, "slug": "tensor-mathematics", "title": "Tensor Mathematics and Multilinear Algebra",
+         "explores": "Tensor products, multilinear maps, tensor decompositions."},
+        {"n": 94, "slug": "algebraic-geometry", "title": "Algebraic Geometry: Solving Equations Through Shapes",
+         "explores": "Polynomial varieties, ideals, coordinate rings."},
+        {"n": 95, "slug": "representation-theory", "title": "Representation Theory: Making Abstract Symmetry Concrete",
+         "explores": "Group representations, characters, irreducible structures."},
+        {"n": 96, "slug": "mathematical-economics", "title": "Mathematical Economics and Social Choice",
+         "explores": "Equilibrium, preference relations, welfare, voting theory."},
+        {"n": 97, "slug": "measure-theory", "title": "Measure Theory and Modern Probability",
+         "explores": "Sigma-algebras, measures, Lebesgue integration, convergence."},
+        {"n": 98, "slug": "mathematical-research", "title": "Mathematical Research: How New Mathematics Is Created",
+         "explores": "Conjectures, counterexamples, proof strategy, literature exploration."}
+      ]
+    }
+  ],
+  "paths": [
+    {"name": "Game development", "tracks": ["G", "A", "I"], "chapters": [69, 70, 72, 71, 75, 73, 74, 76, 26, 27, 86]},
+    {"name": "Strategic systems", "tracks": ["C", "B", "D"], "chapters": [31, 39, 40, 41, 42, 43, 46, 47, 48, 53]},
+    {"name": "Reliable software and formal methods", "tracks": ["F", "A"], "chapters": [63, 29, 64, 65, 30, 66, 67, 68]},
+    {"name": "Security and communications", "tracks": ["H", "E", "B"], "chapters": [57, 56, 33, 77, 78, 79, 80, 81, 82]},
+    {"name": "Machine learning foundations", "tracks": ["B", "D", "E"], "chapters": [31, 33, 35, 38, 47, 48, 52, 53, 55, 61]},
+    {"name": "Complex systems and networks", "tracks": ["I", "A", "B"], "chapters": [27, 34, 83, 84, 85, 86, 87, 88]}
+  ]
+}

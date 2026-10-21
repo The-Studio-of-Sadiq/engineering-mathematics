@@ -553,11 +553,11 @@ $$
 ```desmos-graph
 left=-12; right=12; bottom=-0.05; top=1.05
 ---
-y=e^{-\left|x\right|}|black|dashed
-y=\left(1-\frac{\left|x\right|}{2}\right)e^{-\left|x\right|}|red|-2<x<2
-y=\left(1-\frac{\left|x\right|}{10}\right)e^{-\left|x\right|}|blue|-10<x<10
-y=1-\frac{\left|x\right|}{2}|red|dotted|-2<x<2
-y=1-\frac{\left|x\right|}{10}|blue|dotted|-10<x<10
+y=e^{-\operatorname{abs}\left(x\right)}|black|dashed
+y=\left(1-\frac{\operatorname{abs}\left(x\right)}{2}\right)e^{-\operatorname{abs}\left(x\right)}|red|-2<x<2
+y=\left(1-\frac{\operatorname{abs}\left(x\right)}{10}\right)e^{-\operatorname{abs}\left(x\right)}|blue|-10<x<10
+y=1-\frac{\operatorname{abs}\left(x\right)}{2}|red|dotted|-2<x<2
+y=1-\frac{\operatorname{abs}\left(x\right)}{10}|blue|dotted|-10<x<10
 ```
 
 *Step 2 in pictures for $R_{XX}(\tau)=e^{-\lvert\tau\rvert}$ (dashed): a record of length $2T$ sees the autocorrelation through the triangular window $w_T$ (dotted), giving the products shown for $T=1$ (red) and $T=5$ (blue). As $T\to\infty$ the window flattens to $1$. At $\omega=0.5$, $E\lvert X_T\rvert^2/2T=1.082,\ 1.504,\ 1.590$ for $T=1,5,50$, against $S_{XX}(0.5)=2/(1+0.25)=1.6$.*

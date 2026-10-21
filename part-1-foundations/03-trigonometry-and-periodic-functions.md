@@ -1206,7 +1206,7 @@ The magnitude $\lvert S\rvert=\lvert\sin(N\delta/2)/\sin(\delta/2)\rvert$ equals
 ```desmos-graph
 left=-6.3; right=6.3; bottom=-1; top=9
 ---
-y=\left|\frac{\sin(4x)}{\sin(x/2)}\right||blue
+y=\operatorname{abs}\left(\frac{\sin(4x)}{\sin(x/2)}\right)|blue
 y=8|red|dashed
 ```
 *The array factor $\lvert\sin(N\delta/2)/\sin(\delta/2)\rvert$ for $N=8$ against the inter-element phase $\delta$: a main lobe of height $N=8$ at $\delta=0$, nulls at multiples of $\delta=2\pi/8$, and smaller side lobes between them.*
@@ -1502,7 +1502,7 @@ y=2(\frac{x}{2\pi}-\operatorname{floor}(\frac{x}{2\pi}+\frac{1}{2}))|green
 ```desmos-graph
 left=-1; right=13; bottom=-0.3; top=1.3
 ---
-y=\left|\sin(x)\right||blue
+y=\operatorname{abs}\left(\sin(x)\right)|blue
 y=\max(\sin(x),0)|red|dashed
 y=\frac{2}{\pi}|blue|dotted
 y=\frac{1}{\pi}|red|dotted

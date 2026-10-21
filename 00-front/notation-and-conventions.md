@@ -90,3 +90,6 @@ The book uses Obsidian callouts (they degrade to blockquotes on GitHub):
 
 > [!warning] Common Pitfall
 > A mistake worth avoiding.
+
+> [!mystery] Missing clue
+> A question the chapter raises on purpose and leaves open, with a pointer to where it is answered (track chapters only).

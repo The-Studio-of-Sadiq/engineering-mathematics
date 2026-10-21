@@ -548,7 +548,7 @@ x^2+y^2=1|black|dashed
 ```desmos-graph
 left=-3; right=3; bottom=-3; top=3
 ---
-0.25<x^2+y^2<4|blue
+x^2+y^2>0.25|x^2+y^2<4|blue
 x^2+y^2=1|black|dashed
 (0.5,0)|red|label:pole 0.5
 (2,0)|red|label:pole 2
@@ -1338,7 +1338,7 @@ because near the pole the unit circle is almost straight, and the pole-vector le
 ```desmos-graph
 left=0; right=3.1416; bottom=0; top=12
 ---
-y=\frac{2\left|\sin(x)\right|}{\sqrt{\left(\cos(2x)-0.9\cos(x)+0.81\right)^2+\left(\sin(2x)-0.9\sin(x)\right)^2}}|blue
+y=\frac{2\operatorname{abs}\left(\sin(x)\right)}{\sqrt{\left(\cos(2x)-0.9\cos(x)+0.81\right)^2+\left(\sin(2x)-0.9\sin(x)\right)^2}}|blue
 x=1.0472|grey|dashed
 (1.0472,10.52)|label:peak ≈ 10.5 at π/3
 ```
@@ -1368,8 +1368,8 @@ x=1.0472|grey|dashed
 ```desmos-graph
 left=-3.1416; right=3.1416; bottom=0; top=1.1
 ---
-y=\left|\frac{\sin(2x)}{4\sin(x/2)}\right||blue
-y=\left|\frac{\sin(4x)}{8\sin(x/2)}\right||red|dashed
+y=\operatorname{abs}\left(\frac{\sin(2x)}{4\sin(x/2)}\right)|blue
+y=\operatorname{abs}\left(\frac{\sin(4x)}{8\sin(x/2)}\right)|red|dashed
 ```
 
 *Magnitude responses of the 4-point (blue) and 8-point (red, dashed) moving averages: crude low-pass filters with nulls at multiples of $2\pi/M$. Doubling the length halves the main-lobe width.*
