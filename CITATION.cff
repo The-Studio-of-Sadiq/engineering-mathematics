@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use or adapt this book, please cite it as below."
+type: dataset
+title: "The Mathematics Universe: Engineering Mathematics Core and Beyond"
+abstract: >-
+  An open textbook: a 25-chapter engineering-mathematics core, nine specialization
+  tracks and a research frontier (chapters 26-99), and an appendix of proofs,
+  written in Markdown and LaTeX with Desmos graphs and original figures.
+authors:
+  - given-names: "Golam Kuadir Khan"
+    family-names: "Prince"
+repository-code: "https://github.com/The-Studio-of-Sadiq/engineering-mathematics"
+url: "https://github.com/The-Studio-of-Sadiq/engineering-mathematics"
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2026-10-22"
+keywords:
+  - engineering mathematics
+  - textbook
+  - calculus
+  - linear algebra
+  - differential equations
+  - probability
+  - algorithms
+  - game theory
+  - optimization
+  - cryptography
+  - dynamical systems

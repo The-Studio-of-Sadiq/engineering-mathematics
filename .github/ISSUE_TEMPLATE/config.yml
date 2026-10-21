@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the book (PDF)
+    url: https://github.com/The-Studio-of-Sadiq/engineering-mathematics/blob/main/The-Mathematics-Universe.pdf
+    about: The whole book as one PDF with bookmarks.
+  - name: Contributing guide
+    url: https://github.com/The-Studio-of-Sadiq/engineering-mathematics/blob/main/CONTRIBUTING.md
+    about: How to propose fixes, figures and chapters.

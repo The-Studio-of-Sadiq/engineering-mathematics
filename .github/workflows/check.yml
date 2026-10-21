@@ -1,0 +1,45 @@
+name: Check book
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Book consistency (math, links, headings, track structure)
+        run: python tools/check_book.py
+
+      - name: Desmos syntax the Obsidian plugin can't parse
+        run: python tools/fix_desmos.py --check
+
+      - name: Navigation pages are up to date with tools/book.json
+        run: |
+          python tools/gen_nav.py
+          git diff --exit-code -- 00-front tracks || (echo "::error::Run 'python tools/gen_nav.py' and commit the result." && exit 1)
+
+  figures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install plotting dependencies
+        run: pip install numpy matplotlib scipy
+
+      - name: Every figure script runs
+        run: python figures/build_all.py

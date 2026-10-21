@@ -1,0 +1,42 @@
+name: Chapter proposal
+description: Propose a new chapter, section or track, or a substantial rewrite.
+title: "[Proposal] "
+labels: ["proposal"]
+body:
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - "Level 1 — Core (chapters 1–25)"
+        - "Level 2 — Specialization track"
+        - "Level 3 — Research frontier (Track J)"
+        - "Appendix (proofs)"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+      placeholder: "Randomized Algorithms: When Coins Beat Cleverness"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What it explores
+      description: The topics, the hook you have in mind, and which existing chapters it builds on or answers mysteries for.
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Overlap with existing chapters
+      description: Which chapters already touch this, and how yours extends rather than repeats them.
+  - type: checkboxes
+    id: style
+    attributes:
+      label: Style
+      options:
+        - label: I have read the Authoring Guide (00-front/authoring-guide.md).
+          required: true

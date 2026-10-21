@@ -1,0 +1,13 @@
+# Store text with LF line endings everywhere, so diffs stay clean across Windows, macOS and Linux.
+* text=auto eol=lf
+
+# Binary and generated assets.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.svg  text eol=lf linguist-generated=true
+The-Mathematics-Universe.pdf  linguist-generated=true
+pdf/package-lock.json         linguist-generated=true
+
+# Count the book as documentation on GitHub's language bar.
+*.md   linguist-documentation=false linguist-detectable=true

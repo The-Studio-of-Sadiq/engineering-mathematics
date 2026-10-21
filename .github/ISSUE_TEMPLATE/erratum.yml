@@ -1,0 +1,36 @@
+name: Erratum
+description: Report a mathematical error, a false statement or a broken step in a proof or example.
+title: "[Erratum] §"
+labels: ["erratum"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks! Precise reports get fixed fastest. Section ids look like `14.7` (core), `39.3` (track) or `D.11` (appendix).
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: Chapter and section id, plus the worked example or equation if it has a name.
+      placeholder: "§14.7, Worked Example 14.31"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What the book says
+      description: Quote it (LaTeX is fine).
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What it should say, and why
+      description: A short derivation, a counterexample, a numerical check or a reference.
+    validations:
+      required: true
+  - type: checkboxes
+    id: answers
+    attributes:
+      label: Track chapters
+      options:
+        - label: I understand that challenges and [!mystery] questions are left unanswered on purpose, and this report is not asking for solutions.

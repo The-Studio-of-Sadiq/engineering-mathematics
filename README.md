@@ -1,5 +1,10 @@
 # The Mathematics Universe
 
+[![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT.md)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Check book](https://github.com/The-Studio-of-Sadiq/engineering-mathematics/actions/workflows/check.yml/badge.svg)](https://github.com/The-Studio-of-Sadiq/engineering-mathematics/actions/workflows/check.yml)
+[![PDF](https://img.shields.io/badge/PDF-1%2C422%20pages-red.svg)](The-Mathematics-Universe.pdf)
+
 > **Engineering Mathematics Core and Beyond.** A foundation for modelling, analysing and simulating engineered systems, then nine specialization tracks and a research frontier for whoever wants to keep going.
 
 ![The Mathematics Universe](images/universe-map.svg)
@@ -64,3 +69,14 @@ cd pdf && npm install && node build.mjs
 ```
 
 The build renders each Desmos block once (cached in `pdf/cache/`), prints the book with Chrome, and writes `The-Mathematics-Universe.pdf` at the repository root. It reports any math or Desmos errors in `pdf/cache/`. Set `DESMOS_API_KEY` to use your own key; otherwise it uses the public demo key from the Desmos API documentation. `node build.mjs --only core` (or `tracks`, `appendix`) builds a partial PDF for quick checks.
+
+## Contributing
+
+Corrections, clearer explanations, figures and new chapters are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md); report mathematical errors with the **Erratum** issue template. Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md). Security issues in the tooling: see [SECURITY.md](SECURITY.md). Release history: [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+- **Book content** (chapters, appendix, front matter, figures, the PDF): [CC BY 4.0](LICENSE-CONTENT.md). Reuse and adapt it freely, commercially or not, with attribution.
+- **Code** (`pdf/`, `figures/`, `tools/`, `mcp-server/`, and code snippets in chapters): [MIT](LICENSE).
+
+To cite the book, use [CITATION.cff](CITATION.cff) (GitHub's "Cite this repository" button reads it).
