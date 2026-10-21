@@ -18,6 +18,7 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import katex from "katex";
 import MarkdownIt from "markdown-it";
+import { PDFDocument } from "pdf-lib";
 import { chromium } from "playwright-core";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -356,6 +357,22 @@ ${body.join("\n")}
 </body></html>`;
 }
 
+/** Chrome writes only the title; fill in the rest of the document properties from book.json. */
+async function setMetadata(file) {
+  const pdf = await PDFDocument.load(fs.readFileSync(file), { updateMetadata: false });
+  pdf.setTitle(ONLY ? `${BOOK.title} (${ONLY})` : BOOK.title, { showInWindowTitleBar: true });
+  pdf.setAuthor(BOOK.author);
+  pdf.setSubject(`${BOOK.subtitle}. ${BOOK.description}`);
+  pdf.setKeywords([BOOK.keywords.join(", ")]);
+  pdf.setCreator("pdf/build.mjs (Markdown, KaTeX, Desmos, headless Chrome)");
+  pdf.setProducer("Skia/PDF via Chrome; metadata by pdf-lib");
+  pdf.setLanguage("en");
+  const now = new Date();
+  pdf.setCreationDate(now);
+  pdf.setModificationDate(now);
+  fs.writeFileSync(file, await pdf.save({ useObjectStreams: true }));
+}
+
 async function launch() {
   for (const channel of ["chrome", "msedge"]) {
     try { return await chromium.launch({ channel }); } catch { /* try next */ }
@@ -390,6 +407,7 @@ async function main() {
       headerTemplate: `<div style="font-size:7.5px;color:#9ca3af;width:100%;text-align:right;padding-right:17mm">${BOOK.title}</div>`,
       footerTemplate: `<div style="font-size:8px;color:#6b7280;width:100%;text-align:center"><span class="pageNumber"></span></div>`,
     });
+    await setMetadata(OUT_PDF);
     console.log(`pdf: ${OUT_PDF} (${(fs.statSync(OUT_PDF).size / 1e6).toFixed(1)} MB)`);
   } finally {
     await browser.close();

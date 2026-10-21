@@ -1,10 +1,10 @@
-# Syllabus
+# Syllabus — Core (Level 1)
 
-[← Table of Contents](table-of-contents.md)
+[← Table of Contents](table-of-contents.md) · [Tracks syllabus](syllabus-tracks.md)
 
 **Objective:** Develop the mathematical foundation needed to understand, model, analyze, and simulate electrical and electronic systems.
 
-**Boundary:** Book 1 teaches mathematical methods. Applications such as Fourier-based filtering, circuit simulation, and motor modeling are explained in their relevant core or in Applications & Integrations.
+**Boundary:** The core teaches mathematical methods. Engineering applications such as Fourier-based filtering, circuit simulation and motor modeling appear only as motivation; full treatments belong to engineering courses. The specialization tracks (Levels 2 and 3) extend the mathematics itself.
 
 ## Part I — Mathematical Foundations
 

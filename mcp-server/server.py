@@ -118,7 +118,7 @@ def _section_for_line(unit: Unit, line_no: int) -> Section | None:
 
 mcp = MCPServer(
     name="engineering-math-book",
-    title="Engineering Mathematics Core",
+    title="The Mathematics Universe",
     instructions=(
         "The Mathematics Universe: a 25-chapter engineering-mathematics core (keys '1'..'25'), "
         "specialization and frontier track chapters (keys '26'..'99': algorithms, probability and "

@@ -135,5 +135,5 @@ Each chapter is a full textbook chapter: **30–40 printed pages, i.e. roughly 1
 ## Tone and scope
 
 - Textbook-standard results, explained thoroughly; derive what is central, cite what is routine.
-- EE examples (RC/RLC circuits, phasors, signals, fields, noise) motivate methods but the chapter stays a math chapter (see book boundary in the [README](../README.md)).
+- EE examples (RC/RLC circuits, phasors, signals, fields, noise) motivate methods but the chapter stays a math chapter (see the boundary statement in the [core syllabus](syllabus.md)).
 - Check every equation for dimensional consistency and every worked example numerically.

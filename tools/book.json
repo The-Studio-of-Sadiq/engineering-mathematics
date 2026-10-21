@@ -1,6 +1,9 @@
 {
   "title": "The Mathematics Universe",
   "subtitle": "Engineering Mathematics Core and Beyond",
+  "author": "Golam Kuadir Khan Prince",
+  "description": "A 25-chapter engineering-mathematics core, nine specialization tracks, a research frontier and an appendix of proofs, with Desmos graphs and crafted figures.",
+  "keywords": ["engineering mathematics", "calculus", "linear algebra", "differential equations", "transforms", "probability", "statistics", "numerical methods", "optimization", "algorithms", "game theory", "information theory", "abstract algebra", "topology", "logic", "computer graphics", "cryptography", "dynamical systems", "chaos"],
   "levels": [
     {"level": 1, "name": "Core", "blurb": "The original 25 chapters: the engineering-mathematics foundation every track builds on."},
     {"level": 2, "name": "Specializations", "blurb": "Tracks A–I. Each track has its own prerequisite graph; read the ones you need, in any order."},
