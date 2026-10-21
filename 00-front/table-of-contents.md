@@ -40,3 +40,10 @@
 23. [Optimization](../part-7-numerical-computational/23-optimization.md)
 24. [Computational Mathematics](../part-7-numerical-computational/24-computational-mathematics.md)
 25. [Mathematical Modeling](../part-7-numerical-computational/25-mathematical-modeling.md)
+
+## Appendix — Derivations and Proofs
+- A. [Calculus and Complex Numbers](../appendix/A-calculus-and-complex-numbers.md)
+- B. [Vector Calculus and Field Theorems](../appendix/B-vector-calculus-theorems.md)
+- C. [Linear Algebra](../appendix/C-linear-algebra.md)
+- D. [Transforms, ODEs and Complex Analysis](../appendix/D-transforms-and-complex-analysis.md)
+- E. [Probability, Statistics and Numerical Methods](../appendix/E-probability-statistics-numerics.md)

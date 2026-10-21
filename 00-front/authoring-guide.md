@@ -10,6 +10,8 @@ Rules every chapter follows, so the book reads as one piece.
 - Plain Markdown + LaTeX. No images to maintain; graphs are `desmos-graph` blocks.
 - Links are relative Markdown links (`[Ch. 14](../part-5-transforms/14-laplace-transforms.md)`), not `[[wikilinks]]`, so they work on GitHub and in Obsidian.
 
+Appendix files are `appendix/X-<slug>.md` (X = A, B, …), with sections `## X.k Result name`. Each holds a theorem statement, a full proof ending in ∎, and remarks.
+
 ## Chapter skeleton
 
 ```markdown

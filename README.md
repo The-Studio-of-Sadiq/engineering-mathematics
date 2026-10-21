@@ -41,5 +41,12 @@ Outside Obsidian (e.g. GitHub), the block shows as readable source — the equat
 | V — Transforms and Mathematical Analysis | [part-5-transforms](part-5-transforms/) | 14–18 |
 | VI — Probability, Statistics, and Stochastic Mathematics | [part-6-probability-statistics](part-6-probability-statistics/) | 19–21 |
 | VII — Numerical and Computational Mathematics | [part-7-numerical-computational](part-7-numerical-computational/) | 22–25 |
+| Appendix — Derivations and Proofs | [appendix](appendix/) | A–E |
 
 Full chapter list: [Table of Contents](00-front/table-of-contents.md).
+
+The chapters state key results with short justifications. The appendix gives complete proofs, with precise hypotheses and counterexamples, and links back to where each result is used.
+
+## MCP server
+
+[`mcp-server/`](mcp-server/) lets Claude and other MCP clients read the book: list chapters, fetch exact sections, search the text, and pull formula summaries and graphs. Claude Code picks it up from [`.mcp.json`](.mcp.json). For setup and the tool list, see the [server README](mcp-server/README.md).

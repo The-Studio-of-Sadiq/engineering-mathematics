@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "engineering-math-book": {
+      "command": "python",
+      "args": ["mcp-server/server.py"]
+    }
+  }
+}
