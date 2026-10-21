@@ -1,0 +1,12 @@
+# Obsidian per-user workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/graph.json
+.trash/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
